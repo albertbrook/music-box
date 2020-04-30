@@ -1,7 +1,6 @@
 import java.util.Iterator;
 
 class Track implements Iterator {
-
     private String string;
     private int cursor;
 
