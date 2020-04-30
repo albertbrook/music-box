@@ -3,7 +3,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class Main extends JFrame {
-
     private Main() {
         setTitle("Music Box - AlbertBrook");
         setResizable(false);
