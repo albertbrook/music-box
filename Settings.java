@@ -1,18 +1,44 @@
 import java.awt.*;
 
 class Settings {
-
     static final Dimension SCREEN_SIZE;
-    static final int SPEED = 250;
-    static String[] symbols = new String[]{"-", "", "+"};
-    static String[] items = new String[]{"do", "re", "mi", "fa", "so", "la", "xi"};
+    static final Color BACKGROUND_COLOR;
+    static final int PLAY_SPEED;
+
+    static final Dimension BALL_SIZE;
+    static final int BALL_SPEED;
+    static final Color BALL_COLOR;
+    static final Color LIGHT_COLOR;
+
+    static final Dimension BUTTON_SIZE;
+    static final int BUTTON_SPACE;
+    static final Color BUTTON_COLOR;
+    static final Color BUTTON_CLICK;
+
+    static final int FONT_SIZE;
+
     static String track1;
     static String track2;
 
     static {
         SCREEN_SIZE = new Dimension(500, 500);
+        BACKGROUND_COLOR = Color.BLACK;
+        PLAY_SPEED = 250;
+
+        BALL_SIZE = new Dimension(10, 10);
+        BALL_SPEED = 10;
+        BALL_COLOR = Color.WHITE;
+        LIGHT_COLOR = Color.GREEN;
+
+        BUTTON_SIZE = new Dimension(80, 40);
+        BUTTON_SPACE = 10;
+        BUTTON_COLOR = Color.GRAY;
+        BUTTON_CLICK = Color.WHITE;
+
+        FONT_SIZE = 20;
+
         track1 = "0-1-2-3-4-5-6-71234567+1+2+3+4+5+6+70";
-        track2 = "00000000000000000000000";
+        track2 = "0+7+6+5+4+3+2+17654321-7-6-5-4-3-2-10";
         // two tigers
 //        track1 += "10203010102030103040500030405000565430105654301020-50100020-501000";
 //        track2 += "0000000000000000000000000000000000000000000000000000000000000000";
@@ -29,7 +55,7 @@ class Settings {
                 "60 05 60 +10 50 00 00 43 40 03 40 +10 30 00 0+1 +1+1" +
                 "70 04 40 70 70 00 00 67 +10 07 +10 +30 70 00 00 33" +
                 "60 05 60 +10 50 00 00 30 40 +17 70 +10 +20 +3+1 +10 00" +
-                "+10 70 60 00 70 00 50 00";
+                "+10 70 60 00 70 00 50 00 60";
         track2 += "00 00 00 00 -6-3 -61 30 00 -3-7 -3-5 -70 00 -4-1 -4-6 10 00" +
                 "-1-5 13 50 00 -2-6 -2-4 -60 00 -6-3 -61 30 00 -3-7 -3-5 -70 00" +
                 "-3-7 -3-5 -70 00 -6-3 -61 30 00 -3-7 -3-5 -70 00 -4-1 -4-6 10 00" +
@@ -42,7 +68,7 @@ class Settings {
                 "-4-1 -4-6 10 00 -1-5 13 50 00 -2-6 -2-4 -60 00 -6-3 -61 30 00" +
                 "-7-4 -7-2 -40 00 -3-7 -3-5 -70 00 -6-3 -61 30 00 -3-7 -3-5 -70 00" +
                 "-4-1 -4-6 10 00 -1-5 13 50 00 -2-6 -2-4 -60 00 -6-3 -61 30 00" +
-                "-40 -10 -40 -10 -30 -70 -30 -70";
+                "-40 -10 -40 -10 -30 -70 -30 -70 -60";
         // only my railgun
 //        track1 += "0060 6056 0060 5056 0060 6056 0060 5056 0060 6056 0060 5056 0060 6056 0060 5056" +
 //                "0060 6056 0060 5056 0060 6056 0060 5056 0060 6056 0060 5056 0060 6056 00+10 +70+50" +
