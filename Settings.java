@@ -26,7 +26,7 @@ class Settings {
         PLAY_SPEED = 250;
 
         BALL_SIZE = new Dimension(10, 10);
-        BALL_SPEED = 10;
+        BALL_SPEED = 9;
         BALL_COLOR = Color.WHITE;
         LIGHT_COLOR = Color.GREEN;
 
